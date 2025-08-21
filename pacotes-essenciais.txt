@@ -1,0 +1,78 @@
+Ordem de Instalação dos Programas Essenciais (Base Linux / Bootstrap)
+
+==================================================================
+1. Toolchain inicial (compilador e suporte a build)
+------------------------------------------------------------------
+1. binutils
+2. gcc
+3. linux-headers
+4. glibc
+5. m4
+6. bison
+7. flex
+8. make
+
+==================================================================
+2. Shell e ambiente básico
+------------------------------------------------------------------
+9. bash
+10. coreutils
+11. diffutils
+12. file
+13. findutils
+14. gawk
+15. grep
+16. sed
+17. tar
+18. patch
+
+==================================================================
+3. Utilitários de sistema
+------------------------------------------------------------------
+19. util-linux
+20. shadow
+21. texinfo
+22. perl
+
+==================================================================
+4. Compressão e compactação
+------------------------------------------------------------------
+23. bzip2
+24. xz
+25. zlib
+26. pigz
+
+==================================================================
+5. Rede e segurança
+------------------------------------------------------------------
+27. curl
+28. openssl
+29. git
+
+==================================================================
+6. Bibliotecas e suporte extra
+------------------------------------------------------------------
+30. ncurses
+31. pkg-config
+32. autoconf
+33. automake
+34. libtool
+
+==================================================================
+7. Documentação
+------------------------------------------------------------------
+35. man-pages
+36. man-db
+
+==================================================================
+8. Baselayout (estrutura de diretórios do sistema)
+------------------------------------------------------------------
+37. baselayout
+
+==================================================================
+Observação:
+- A ordem segue a lógica de bootstrap inspirada no Linux From Scratch (LFS).
+- Primeiro é montado o toolchain (compilador, assembler, libs de C).
+- Depois vem shell, coreutils e ferramentas de texto.
+- Em seguida utilitários do sistema, compressão, rede, bibliotecas extras e documentação.
+- Por último o baselayout, para organizar a hierarquia final de diretórios.
